@@ -1,0 +1,12 @@
+{
+  "name": "prut",
+  "version": "0.0.1",
+  "main": "index.js",
+  "bin": "prut",
+  "scripts": {
+    "start": "prut"
+  },
+  "author": "Rasmus Porsager <rasmus@porsager.com>",
+  "repository": "porsager/prut",
+  "license": "WTFPL"
+}
