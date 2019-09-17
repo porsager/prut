@@ -7,9 +7,9 @@ target && (target.p = target.prut = p)
 
 function p(x) {
   if (Array.isArray(x) && Array.isArray(x.raw)) {
+    const prefix = String.raw.apply(String, arguments)
     return function(first) {
-      const args = [x[0]].concat(Array.from(arguments))
-      console.log.apply(console, args)
+      console.log.apply(console, [prefix].concat(Array.from(arguments)))
       return first
     }
   }
