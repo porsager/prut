@@ -20,6 +20,7 @@ function p(x) {
 
 const op = {
   enumerable: false,
+  configurable: true,
   get: function() {
     p(typeof this.valueOf === 'function' ? this.valueOf() : this)
     return this
