@@ -1,6 +1,8 @@
 #! /usr/bin/env node
+const path = require('path')
+
 require('child_process').spawnSync(
   process.argv[0],
-  ['-r', 'prut'].concat(process.argv.slice(2)),
+  ['-r', path.join(__dirname, 'index.js')].concat(process.argv.slice(2)),
   { stdio: 'inherit' }
 )
