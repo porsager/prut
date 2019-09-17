@@ -26,5 +26,4 @@ const op = {
   }
 }
 
-Object.defineProperty(Object.prototype, 'p', op)
 Object.defineProperty(Object.prototype, 'prut', op)
