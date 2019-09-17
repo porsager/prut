@@ -23,7 +23,7 @@ This module adds a global `p` and global `prut`* variable which is a convenience
 
 It simply defers to console.log, but returns the first argument instead of `undefined`.
 
-If it is called as a tagged template literal it will return a new `p`function that always prefixes logs with the value in the template literal.
+If it is called as a tagged template literal it will return a new `p` function that always prefixes logs with the value in the template literal.
 
 It also adds `p` and `prut` to Object.prototype to enable even quicker logging. This way you can jump into a chain at any place to log the value and continue with your program as if nothing happened.
 
